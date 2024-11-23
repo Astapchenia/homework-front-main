@@ -14,13 +14,13 @@ type UserListPropsType = {
   users: UserType[]; // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
 };
 
-export const UserList = ({users}: UserListPropsType) => {
+export const UserList = (props: UserListPropsType) => {
   return (
     <div id={'hw01-users'}>
       <h2>User List:</h2>
 
       <ul>
-        {users.map((el:UserType ) => ( // ВСЕ ТОВАРЫ В СТРАНУ ПРИЕЗЖАЮТ В КОНТЕЙНЕРАХ, А В РЕАКТЕ...
+        {props.users.map((el, index ) => ( // ВСЕ ТОВАРЫ В СТРАНУ ПРИЕЗЖАЮТ В КОНТЕЙНЕРАХ, А В РЕАКТЕ...
           <li key={el.id} id={`hw01-user-${el.id}`}>
             <strong>{el.name}</strong> (Age: {el.age})<strong> Address:</strong>
             {el.address.street}, {el.address.city}
