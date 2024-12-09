@@ -31,7 +31,6 @@ export const HW1 = () => {
 		},
 
 		{id: 10, name: 'Emily', age: 55, address: {street: '765 Aspen Blvd', city: 'Los Angeles'}},
-		{id: 11, name: 'Robert', age: 4, address: {street: '876 Spruce Way', city: 'San Francisco'}},
 	];
 
 	return (
